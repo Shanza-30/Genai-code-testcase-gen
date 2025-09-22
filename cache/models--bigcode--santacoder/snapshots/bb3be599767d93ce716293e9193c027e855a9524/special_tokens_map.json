@@ -1,0 +1,9 @@
+{
+  "additional_special_tokens": [
+    "<|endoftext|>",
+    "<fim-prefix>",
+    "<fim-middle>",
+    "<fim-suffix>",
+    "<fim-pad>"
+  ]
+}

@@ -1,0 +1,37 @@
+# .github/workflows/ci.yml
+name: GenAI Generate & Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  generate-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run generation + tests (example)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python - <<'PY'
+from generator.generate import generate_code, generate_tests, extract_python_from_response
+from evaluator.run_tests import evaluate
+req = "Implement a function add(a,b) returning sum and a multiply(a,b)."
+code_raw = generate_code(req, backend="openai", model="gpt-4o-mini", max_tokens=512)
+code = extract_python_from_response(code_raw)
+tests_raw = generate_tests(code, backend="openai", model="gpt-4o-mini", max_tokens=512)
+tests = extract_python_from_response(tests_raw)
+res = evaluate(code, tests)
+print("EXIT", res["exit_code"])
+print(res["output"])
+PY
