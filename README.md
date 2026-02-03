@@ -3,9 +3,9 @@
 This project is a **Streamlit-based web application** that allows users to input requirements or a short description of a function.  
 The app then uses **Hugging Face models (e.g., Salesforce CodeGen, StarCoder)** to automatically generate:
 
-- ✅ Python function code  
-- ✅ Unit test cases (using `pytest`)  
-- ✅ Execution of tests with results displayed  
+ ✅ Python function code  
+ ✅ Unit test cases (using `pytest`)  
+✅ Execution of tests with results displayed  
 
 ---
 
