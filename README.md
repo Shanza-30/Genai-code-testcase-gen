@@ -15,7 +15,6 @@ The app then uses **Hugging Face models (e.g., Salesforce CodeGen, StarCoder)** 
 - Run tests live inside the app using **pytest**.  
 - Simple UI built with **Streamlit**.  
 
----
 
 ## 📦 Installation
 
