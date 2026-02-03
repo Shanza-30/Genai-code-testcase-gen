@@ -93,8 +93,3 @@ def test_palindrome_false():
 - The project currently uses **Hugging Face models** (`Salesforce/codegen-350M-multi` by default).  
 - Models are downloaded and cached locally in the `HF_CACHE` directory (if set).  
 - Internet connection is required for the first run to download models.  
-
----
-
-## 📄 License
-MIT License – feel free to use and modify for learning and research.
