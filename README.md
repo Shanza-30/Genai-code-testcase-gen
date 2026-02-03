@@ -7,7 +7,6 @@ The app then uses **Hugging Face models (e.g., Salesforce CodeGen, StarCoder)** 
  ✅ Unit test cases (using `pytest`)  
 ✅ Execution of tests with results displayed  
 
----
 
 ## 🚀 Features
 - Paste any natural language **requirement/task description**.  
