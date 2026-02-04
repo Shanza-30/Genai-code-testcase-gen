@@ -84,7 +84,6 @@ def test_palindrome_false():
 - `Write a function reverse_words(sentence: str) that reverses word order.`  
 - `Create a function count_vowels(s: str) that counts vowels in a string.`  
 
----
 
 ## ⚡ Notes
 - The project currently uses **Hugging Face models** (`Salesforce/codegen-350M-multi` by default).  
