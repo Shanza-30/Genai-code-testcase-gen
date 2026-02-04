@@ -43,7 +43,6 @@ The app then uses **Hugging Face models (e.g., Salesforce CodeGen, StarCoder)** 
    - `accelerate`
    - `pytest`
 
----
 
 ## ▶️ Usage
 
@@ -55,14 +54,14 @@ streamlit run main.py
 
 Then open the local URL (usually `http://localhost:8501/`) in your browser.
 
----
 
 ## 📝 Example
 
 ### Input (Requirement):
-```
+
+
 Implement a function `is_palindrome(s: str)` that returns True for palindromes ignoring non-alphanumeric chars and case.
-```
+
 
 ### Output (Generated Code):
 ```python
@@ -79,8 +78,6 @@ def test_palindrome_true():
 def test_palindrome_false():
     assert not is_palindrome("hello world")
 ```
-
----
 
 ## 📚 Example Prompts You Can Try
 - `Implement fibonacci(n: int) that returns first n Fibonacci numbers as a list.`  
