@@ -1,0 +1,16 @@
+[project]
+name = "genai-code-testcase-gen"
+version = "0.1.0"
+description = "GenAI Code and Test Case Generator"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+
+dependencies = [
+    "streamlit>=1.49.1",
+    "transformers>=4.55.0",
+    "torch>=2.6.0",
+    "accelerate>=1.6.0",
+    "huggingface-hub>=0.34.0",
+    "sentencepiece>=0.2.0",
+    "safetensors>=0.5.0",
+]
